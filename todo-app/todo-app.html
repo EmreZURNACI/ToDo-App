@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/denemelerim/todo-app/style.css">
+  <title>ToDo APP</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="section">
+      <h1 class="main-title">works to be done</h1>
+      <div class="section-task">
+        <form class="controls">
+          <div class="alignment">
+            <input type="text" placeholder="Enter The Work" id="textInput">
+            <button id="addNewTask" class="btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All
+            </button>
+            <ul class="dropdown-menu">
+              <li><a onclick="showCompleted()" class="dropdown-item" id="completedClass" href="#">Completed</a></li>
+              <li><a onclick="showPending()" class="dropdown-item" href="#">Pending</a></li>
+            </ul>
+            <button class="btn" type="button" id="deleteAll">Delete All</button>
+          </div>
+        </form>
+      </div>
+      <div class="task">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="/denemelerim/todo-app/todoapp.js"></script>
+
+</html>

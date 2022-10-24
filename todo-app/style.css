@@ -1,0 +1,135 @@
+:root {
+    --renk: #D6E5FA;
+    --inputrenk: #480032;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main-container {
+    background-image: linear-gradient(rgba(148, 187, 233, 100), rgba(238, 174, 202, 100));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .section {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-title {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #cf2871;
+    text-align: center;
+    width: 100%;
+  }
+
+  .section-task {
+    width: 100%;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  #textInput {
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 3px;
+    caret-color: orchid;
+    color: var(--inputrenk);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 3px;
+    background-color: #cf2871;
+    color: var(--renk);
+  }
+
+  .btn:hover {
+    color: #6caaf4;
+  }
+
+  .alignment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .task {
+    padding: 0.6rem 1rem;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .task ul {
+    gap: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  .task li {
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 10px;
+    color: var(--renk);
+    list-style-type: none;
+    background-image: linear-gradient(to bottom, #6caaf4, #8c91e8, #ae73ce, #c650a5, #cf2871);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .foricons {
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    cursor: grab;
+    color: var(--renk);
+  }
+
+  .fa-solid:hover {
+    cursor: grab;
+  }
+
+  .completed,
+  .all {
+    margin-left: 50px;
+    opacity: 0.5;
+  }
